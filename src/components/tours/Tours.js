@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import data from 'src/data/db.json';
 
 
-function App() {
-    const [tours, setTours] = useState(data);
-  
+
+
+function Tours(props) {
+
     return (
       <div>
-        {tours.map((tour) => (
+        {props.DATA1.map((tour) => (
           <div key={tour.id}>
             <h2>{tour.name}</h2>
             <img src={tour.image} alt={tour.name} />
@@ -16,5 +15,4 @@ function App() {
       </div>
     );
   }
-  
-  export default App;
+  export default Tours;
