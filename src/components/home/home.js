@@ -1,18 +1,21 @@
 
 
 import React from 'react';
-import header from 'src/components/header/header.js';
-import footer from 'src/components/footer/footer.js';
-import App from 'src/components/tours/Tours.js';
+import Header from '../header/header';
+import Footer from '../footer/footer';
+import Tours from '../tours/Tours';
 
-function render() {
+function Home(props) {
+
   return (
     <div>
-      <header />
-      <App />
-      <footer />
+      
+      <Header />
+     <Tours DATA1 = {props.DATA}/>
+      <Footer />
+
     </div>
   );
 }
 
-export default App;
+export default Home;
