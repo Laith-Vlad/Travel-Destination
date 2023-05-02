@@ -1,0 +1,8 @@
+.foot{ 
+    background-color: rgb(12, 28, 46);
+    display: flex;
+    justify-content: center;
+}
+.foot a {
+    font-size: x-small;
+}
