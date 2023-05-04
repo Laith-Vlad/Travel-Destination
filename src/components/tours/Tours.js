@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Tours(props) {
 
     return (
-      <div>
+      <div className='maino'>
        {props.DATA1.map(element=> {
         return(
             <div className='tour'>

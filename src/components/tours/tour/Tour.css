@@ -1,6 +1,17 @@
-p{
-    width: 400px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+h2{
+  
+    width: 250px;
+    height: 300px;
+    color: azure;
+    font-style: italic;
+    text-align: center;
+    
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.super{
+    display: flex;
+    justify-content: end;
+    align-items: stretch;
+    flex-wrap: wrap;
 }

@@ -1,7 +1,11 @@
 .foot{ 
+    width: 100%; 
+    height: 120px;
     background-color: rgb(12, 28, 46);
     display: flex;
     justify-content: center;
+    align-content: center;
+   
 }
 .foot a {
     font-size: x-small;
