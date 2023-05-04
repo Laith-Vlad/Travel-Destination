@@ -2,7 +2,7 @@
 import Header from '../header/header';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-
+import '../tourD/TourD.css';
 
 function TourDetails(props){
     const { id } = useParams() 
@@ -19,7 +19,17 @@ console.log(id)
         <>
             <Header></Header>
             <div className='cityy'>
-                    <p> {showMore ? city.info :`${city.info.slice(0,230)}` } </p>
+            <img src={city.image} alt={city.name} />
+               <div className='fontw'> {
+                    showMore &&
+                    city.info 
+                }
+                {
+                    !showMore &&
+                    city.info.slice(0,230)
+                }</div> 
+               
+                    {/* <p> {showMore ? city.info :`${city.info.slice(0,230)}` } </p> */}
                 <button className='but' onClick={handleShowMoreClick}>{showMore ? 'see less' : 'see more'}</button>
             </div>
         </>
